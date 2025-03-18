@@ -5,8 +5,60 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:E_Fix"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="E Fix" 
+        Height="600" 
+        Width="800" 
+        ResizeMode="NoResize">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
 
+        <StackPanel
+            Grid.Row="0">
+            <TextBox
+                x:Name="TextLogs"
+                Background="LightGray"
+                IsReadOnly="True"
+                Foreground="Black"
+                FontFamily="Consolas"
+                Margin="16"
+                IsHitTestVisible="False"
+                Height="450"
+            />
+        </StackPanel>
+
+        <StackPanel
+            Grid.Row="1"
+            HorizontalAlignment="Center" 
+            VerticalAlignment="Center" >
+            <Button
+                Cursor="Hand"
+                Height="30"
+                Width="200"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                
+                Content="Iniciar"
+            />
+        </StackPanel>
+
+        <StatusBar 
+            Grid.Row="2"
+            VerticalAlignment="Bottom">
+            <TextBlock 
+                Margin="10, 0, 0, 0"
+                VerticalAlignment="Center" 
+                HorizontalAlignment="Right">
+                <Hyperlink 
+                    TextDecorations="None"
+                    NavigateUri="https://github.com/ovitorvalente"
+                    RequestNavigate="Hyperlink_RequestNavigate">
+                    © 2025 E-Fix | Todos os direitos reservados – Vitor Valente
+                </Hyperlink>
+            </TextBlock>
+        </StatusBar>
     </Grid>
 </Window>
