@@ -1,6 +1,13 @@
-﻿namespace E_Fix;
+﻿using System.Configuration;
+using System.Data;
+using System.Windows;
 
-public partial class App
+namespace E_Fix;
+
+/// <summary>
+/// Interaction logic for App.xaml
+/// </summary>
+public partial class App : Application
 {
 }
 

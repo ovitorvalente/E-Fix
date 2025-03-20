@@ -19,7 +19,7 @@
         <StackPanel
             Grid.Row="0">
             <TextBox
-                x:Name="LogTextBox"
+                x:Name="TextLogs"
                 Background="LightGray"
                 IsReadOnly="True"
                 Foreground="Black"
@@ -40,7 +40,7 @@
                 Width="200"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                Click="SelectFile_Click"
+                
                 Content="Iniciar"
             />
         </StackPanel>
