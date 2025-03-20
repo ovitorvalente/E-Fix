@@ -1,4 +1,4 @@
-﻿namespace E_Fix.Models
+﻿namespace E_Fix.Domain.Entities
 {
     public class DatabaseConfig
     {
